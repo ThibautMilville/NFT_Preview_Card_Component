@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* Neutral */
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--very-dark-blue-main-bg);
+  color: var(--white);
+}
+body section.main-container {
+  width: 285px;
+  background-color: var(--very-dark-blue-card-bg);
+  border-radius: 10px;
+  padding: 16px;
+}
+body section.main-container img {
+  width: 100%;
+  border-radius: 6px;
+}
+body section.main-container h1 {
+  font-size: 1.15rem;
+  margin: 14px 0;
+}
+body section.main-container p.description {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--soft-blue);
+  margin-bottom: 16px;
+}
+body section.main-container div.price-n-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+body section.main-container div.price-n-date p.price {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cyan);
+}
+body section.main-container div.price-n-date p.price img {
+  width: 10px;
+  margin-right: 4px;
+}
+body section.main-container div.price-n-date p.date {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--soft-blue);
+}
+body section.main-container div.price-n-date p.date img {
+  width: 12px;
+  margin-right: 4px;
+}/*# sourceMappingURL=style.css.map */

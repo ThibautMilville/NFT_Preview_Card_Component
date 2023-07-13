@@ -26,18 +26,25 @@ body {
   color: var(--white);
 }
 body section.main-container {
-  width: 285px;
+  width: 275px;
   background-color: var(--very-dark-blue-card-bg);
   border-radius: 10px;
   padding: 16px;
+  box-shadow: 0px 30px 0px 15px rgba(6, 12, 31, 0.0784313725), 0px 30px 0px 50px rgba(6, 12, 31, 0.0784313725);
 }
 body section.main-container img {
   width: 100%;
   border-radius: 6px;
 }
 body section.main-container h1 {
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 1.15rem;
   margin: 14px 0;
+  cursor: pointer;
+}
+body section.main-container h1:hover {
+  color: var(--cyan);
 }
 body section.main-container p.description {
   font-size: 0.9rem;
@@ -72,4 +79,47 @@ body section.main-container div.price-n-date p.date {
 body section.main-container div.price-n-date p.date img {
   width: 12px;
   margin-right: 4px;
+}
+body section.main-container hr {
+  border: 1px solid var(--very-dark-blue-line);
+}
+body section.main-container div.identity {
+  display: flex;
+  align-items: center;
+  margin: 12px 0 8px 0;
+}
+body section.main-container div.identity img {
+  width: 25px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+body section.main-container div.identity p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--soft-blue);
+  margin-left: 10px;
+}
+body section.main-container div.identity span {
+  color: var(--white);
+  font-weight: 400;
+  cursor: pointer;
+}
+body section.main-container div.identity span:hover {
+  color: var(--cyan);
+}
+
+@media (max-width: 600px) {
+  body section.main-container {
+    width: 88%;
+    padding: 22px;
+  }
+  body section.main-container div.price-n-date {
+    margin: 14px 0;
+  }
+  body section.main-container div.price-n-date p.date {
+    font-size: 0.9rem;
+  }
+  body section.main-container div.identity {
+    margin: 14px 0 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */
